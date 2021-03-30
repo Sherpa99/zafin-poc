@@ -1,0 +1,18 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: zafin-poc
+  labels:
+    app: zafin
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: zafin
+  type: NodePort
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
+status:
+  loadBalancer: {}

@@ -1,0 +1,8 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: postgres
+spec:
+  ports:
+    - port: 29459
+      targetPort: 29459
