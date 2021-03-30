@@ -28,7 +28,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
-artifacts/secret
+/secret
 ### VS Code ###
 .vscode/
 #certs
